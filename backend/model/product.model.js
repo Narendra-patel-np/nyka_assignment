@@ -9,7 +9,10 @@ const productSchema = mongoose.Schema(
       type: String,
       enum: ["male", "female"],
     },
-    category: String,
+    category: {
+      type: String,
+      enum: ["makeup", "skincare", "haircare"],
+    },
     price: Number,
     created_at: String,
     updated_at: String,
